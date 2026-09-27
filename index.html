@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -10,28 +11,100 @@
     content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
   >
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="author" content="Konpran">
-  <meta name="theme-color" content="#ffffff">
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  >
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Konpran">
+  <meta
+    name="author"
+    content="Konpran"
+  >
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  >
+
+  <!-- Canonical -->
+  <link
+    rel="canonical"
+    href="https://konpran.com/"
+  >
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="/favicon.ico"
+  >
+
+  <!-- Open Graph -->
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Konpran"
+  >
+
   <meta
     property="og:description"
     content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
   >
-  <meta property="og:site_name" content="Konpran">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Konpran">
+  <meta
+    property="og:url"
+    content="https://konpran.com/"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Konpran"
+  >
+
+  <meta
+    property="og:image"
+    content="https://konpran.com/og.jpg"
+  >
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Konpran"
+  >
+
   <meta
     name="twitter:description"
     content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
   >
 
-  <link rel="icon" href="favicon.ico">
+  <meta
+    name="twitter:image"
+    content="https://konpran.com/og.jpg"
+  >
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Konpran",
+    "url": "https://konpran.com/"
+  }
+  </script>
 
   <style>
     :root {
@@ -70,15 +143,22 @@
       text-rendering: optimizeLegibility;
     }
 
+    a {
+      color: inherit;
+    }
+
     .page {
       min-height: 100vh;
+
       display: flex;
       flex-direction: column;
+
       padding: 42px 48px 28px;
     }
 
     main {
       flex: 1;
+
       display: flex;
       align-items: center;
     }
@@ -86,8 +166,23 @@
     .content {
       width: 100%;
       max-width: 880px;
+
       margin: 0 auto;
       padding: 80px 0 0;
+    }
+
+    /* SEO heading */
+
+    .content h1 {
+      margin-bottom: 28px;
+
+      font-size: 18px;
+      line-height: 1.5;
+
+      font-weight: 400;
+      letter-spacing: -0.005em;
+
+      color: var(--black);
     }
 
     .description {
@@ -111,6 +206,7 @@
     header {
       width: 100%;
       max-width: 880px;
+
       margin: 0 auto;
 
       display: flex;
@@ -132,6 +228,7 @@
 
       font-size: 14px;
       line-height: 1.5;
+
       font-weight: 500;
       letter-spacing: -0.005em;
 
@@ -154,6 +251,7 @@
 
     footer {
       width: 100%;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -162,6 +260,7 @@
 
       font-size: 12px;
       line-height: 1.5;
+
       font-weight: 400;
       letter-spacing: 0.01em;
 
@@ -171,6 +270,7 @@
     footer a {
       color: var(--light);
       text-decoration: none;
+
       border-bottom: 1px solid transparent;
 
       transition: opacity 180ms ease;
@@ -195,6 +295,11 @@
 
       .content {
         padding: 60px 0 0;
+      }
+
+      .content h1 {
+        margin-bottom: 26px;
+        font-size: 16px;
       }
 
       .description {
@@ -250,7 +355,14 @@
 
     <main>
 
-      <section class="content" aria-label="Introduction">
+      <section
+        class="content"
+        aria-labelledby="page-title"
+      >
+
+        <h1 id="page-title">
+          Konpran
+        </h1>
 
         <p class="description">
           It begins with what is there.
@@ -287,9 +399,19 @@
     <header>
 
       <nav aria-label="Main navigation">
-        <a href="about.html">About</a>
-        <a href="philosophy.html">Philosophy</a>
-        <a href="mailto:talk@konpran.com">Get in touch</a>
+
+        <a href="/about.html">
+          About
+        </a>
+
+        <a href="/philosophy.html">
+          Philosophy
+        </a>
+
+        <a href="mailto:talk@konpran.com">
+          Get in touch
+        </a>
+
       </nav>
 
     </header>
@@ -301,9 +423,15 @@
       </span>
 
       <span>
-        <a href="privacy.html">Privacy</a>
+        <a href="/privacy.html">
+          Privacy
+        </a>
+
         ·
-        <a href="terms.html">Terms</a>
+
+        <a href="/terms.html">
+          Terms
+        </a>
       </span>
 
     </footer>
@@ -311,4 +439,5 @@
   </div>
 
 </body>
+
 </html>
