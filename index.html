@@ -1,443 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-
-  <title>Konpran</title>
-
-  <meta
-    name="description"
-    content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
-  >
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="robots"
-    content="index, follow, max-image-preview:large"
-  >
-
-  <meta
-    name="author"
-    content="Konpran"
-  >
-
-  <meta
-    name="theme-color"
-    content="#ffffff"
-  >
-
-  <!-- Canonical -->
-  <link
-    rel="canonical"
-    href="https://konpran.com/"
-  >
-
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/x-icon"
-    href="/favicon.ico"
-  >
-
-  <!-- Open Graph -->
-  <meta
-    property="og:type"
-    content="website"
-  >
-
-  <meta
-    property="og:title"
-    content="Konpran"
-  >
-
-  <meta
-    property="og:description"
-    content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
-  >
-
-  <meta
-    property="og:url"
-    content="https://konpran.com/"
-  >
-
-  <meta
-    property="og:site_name"
-    content="Konpran"
-  >
-
-  <meta
-    property="og:image"
-    content="https://konpran.com/og.jpg"
-  >
-
-  <!-- Twitter / X -->
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
-
-  <meta
-    name="twitter:title"
-    content="Konpran"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://konpran.com/og.jpg"
-  >
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Konpran",
-    "url": "https://konpran.com/"
-  }
-  </script>
-
-  <style>
-    :root {
-      --black: #111111;
-      --muted: #666666;
-      --light: #888888;
-      --background: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      min-height: 100vh;
-      background: var(--background);
-      color: var(--black);
-
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Helvetica,
-        Arial,
-        sans-serif;
-
-      font-weight: 400;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-    }
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>Konpran</title>
 
-    a {
-      color: inherit;
-    }
-
-    .page {
-      min-height: 100vh;
+<meta
+name="description"
+content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
 
-      display: flex;
-      flex-direction: column;
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
 
-      padding: 42px 48px 28px;
-    }
-
-    main {
-      flex: 1;
+<meta
+name="robots"
+content="index, follow, max-image-preview:large"
 
-      display: flex;
-      align-items: center;
-    }
+<meta
+name="author"
+content="Konpran"
 
-    .content {
-      width: 100%;
-      max-width: 880px;
+<meta
+name="theme-color"
+content="#ffffff"
 
-      margin: 0 auto;
-      padding: 80px 0 0;
-    }
+<!-- Canonical --> <link rel="canonical" href="https://konpran.com/" > <!-- Favicon --> <link rel="icon" type="image/x-icon" href="/favicon.ico" > <!-- Open Graph -->
 
-    /* SEO heading */
+<meta
+property="og:type"
+content="website"
 
-    .content h1 {
-      margin-bottom: 28px;
+<meta
+property="og:title"
+content="Konpran"
 
-      font-size: 18px;
-      line-height: 1.5;
+<meta
+property="og:description"
+content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
 
-      font-weight: 400;
-      letter-spacing: -0.005em;
+<meta
+property="og:url"
+content="https://konpran.com/"
 
-      color: var(--black);
-    }
+<meta
+property="og:site_name"
+content="Konpran"
 
-    .description {
-      max-width: 720px;
-      margin-bottom: 28px;
+<meta
+property="og:image"
+content="https://konpran.com/og.jpg"
 
-      font-size: 18px;
-      line-height: 1.7;
-      font-weight: 400;
-      letter-spacing: -0.005em;
+<!-- Twitter / X -->
 
-      color: var(--muted);
-    }
+<meta
+name="twitter:card"
+content="summary_large_image"
 
-    .description:last-child {
-      margin-bottom: 0;
-    }
+<meta
+name="twitter:title"
+content="Konpran"
 
-    /* Menu */
+<meta
+name="twitter:description"
+content="Konpran looks closely at what is there, how it is used, what surrounds it, and what might change its place in a life."
 
-    header {
-      width: 100%;
-      max-width: 880px;
+<meta
+name="twitter:image"
+content="https://konpran.com/og.jpg"
 
-      margin: 0 auto;
+<!-- Structured Data --> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Organization", "name": "Konpran", "url": "https://konpran.com/" } </script> <style> :root { --black: #111111; --muted: #666666; --light: #888888; --background: #ffffff; } * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { min-height: 100vh; background: var(--background); color: var(--black); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; } a { color: inherit; } .page { min-height: 100vh; display: flex; flex-direction: column; padding: 42px 48px 28px; } main { flex: 1; display: flex; align-items: center; } .content { width: 100%; max-width: 880px; margin: 0 auto; padding: 80px 0 0; } .description { max-width: 720px; margin-bottom: 28px; font-size: 18px; line-height: 1.7; font-weight: 400; letter-spacing: -0.005em; color: var(--muted); } .description:last-child { margin-bottom: 0; } /* Menu */ header { width: 100%; max-width: 880px; margin: 0 auto; display: flex; justify-content: flex-start; align-items: center; } nav { display: flex; align-items: center; gap: 28px; } nav a { display: inline-block; color: var(--black); text-decoration: none; font-size: 14px; line-height: 1.5; font-weight: 500; letter-spacing: -0.005em; border-bottom: 1px solid var(--black); padding-bottom: 3px; transition: opacity 180ms ease; } nav a:hover { opacity: 0.5; } nav a:focus-visible { outline: 2px solid var(--black); outline-offset: 5px; } /* Footer */ footer { width: 100%; display: flex; justify-content: space-between; align-items: center; padding-top: 30px; font-size: 12px; line-height: 1.5; font-weight: 400; letter-spacing: 0.01em; color: var(--light); } footer a { color: var(--light); text-decoration: none; border-bottom: 1px solid transparent; transition: opacity 180ms ease; } footer a:hover { opacity: 0.5; } footer a:focus-visible { outline: 2px solid var(--light); outline-offset: 4px; } /* Tablet / mobile */ @media (max-width: 600px) { .page { padding: 28px 24px 22px; } .content { padding: 60px 0 0; } .description { margin-bottom: 26px; font-size: 16px; line-height: 1.7; } header { max-width: 880px; justify-content: flex-start; } nav { gap: 18px; flex-wrap: wrap; } nav a { font-size: 13px; } footer { padding-top: 24px; flex-direction: column; align-items: flex-start; gap: 8px; } } /* Very small screens */ @media (max-width: 380px) { .page { padding-left: 20px; padding-right: 20px; } nav { gap: 14px; } } </style> </head> <body> <div class="page">
+<main>
 
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
+  <section class="content">
 
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-    }
+    <p class="description">
+      It begins with what is there.
+    </p>
 
-    nav a {
-      display: inline-block;
+    <p class="description">
+      Look closely at how it is used, what has led to it, what surrounds
+      it, and what has simply remained. The closer the look, the more
+      the first question can shift.
+    </p>
 
-      color: var(--black);
-      text-decoration: none;
+    <p class="description">
+      Look at what affects what. A small adjustment can reach further
+      than expected. Sometimes something needs to move. Sometimes it is
+      better left alone. The work continues until what remains makes
+      sense as a whole.
+    </p>
 
-      font-size: 14px;
-      line-height: 1.5;
+    <p class="description">
+      Then it leaves.
+    </p>
 
-      font-weight: 500;
-      letter-spacing: -0.005em;
+    <p class="description">
+      It is used, handled, placed, remembered. It finds its place in a
+      life that can never be fully known. The task is to look closely
+      enough, question what needs questioning, and make each decision
+      count. What follows belongs to the life it enters.
+    </p>
 
-      border-bottom: 1px solid var(--black);
-      padding-bottom: 3px;
+  </section>
 
-      transition: opacity 180ms ease;
-    }
+</main>
 
-    nav a:hover {
-      opacity: 0.5;
-    }
+<header>
 
-    nav a:focus-visible {
-      outline: 2px solid var(--black);
-      outline-offset: 5px;
-    }
+  <nav aria-label="Main navigation">
 
-    /* Footer */
+    <a href="/about.html">
+      About
+    </a>
 
-    footer {
-      width: 100%;
+    <a href="/philosophy.html">
+      Philosophy
+    </a>
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    <a href="mailto:talk@konpran.com">
+      Get in touch
+    </a>
 
-      padding-top: 30px;
+  </nav>
 
-      font-size: 12px;
-      line-height: 1.5;
+</header>
 
-      font-weight: 400;
-      letter-spacing: 0.01em;
+<footer>
 
-      color: var(--light);
-    }
+  <span>
+    KONPRAN © 2026
+  </span>
 
-    footer a {
-      color: var(--light);
-      text-decoration: none;
+  <span>
+    <a href="/privacy.html">
+      Privacy
+    </a>
 
-      border-bottom: 1px solid transparent;
+    ·
 
-      transition: opacity 180ms ease;
-    }
+    <a href="/terms.html">
+      Terms
+    </a>
+  </span>
 
-    footer a:hover {
-      opacity: 0.5;
-    }
+</footer>
 
-    footer a:focus-visible {
-      outline: 2px solid var(--light);
-      outline-offset: 4px;
-    }
-
-    /* Tablet / mobile */
-
-    @media (max-width: 600px) {
-
-      .page {
-        padding: 28px 24px 22px;
-      }
-
-      .content {
-        padding: 60px 0 0;
-      }
-
-      .content h1 {
-        margin-bottom: 26px;
-        font-size: 16px;
-      }
-
-      .description {
-        margin-bottom: 26px;
-
-        font-size: 16px;
-        line-height: 1.7;
-      }
-
-      header {
-        max-width: 880px;
-        justify-content: flex-start;
-      }
-
-      nav {
-        gap: 18px;
-        flex-wrap: wrap;
-      }
-
-      nav a {
-        font-size: 13px;
-      }
-
-      footer {
-        padding-top: 24px;
-
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 8px;
-      }
-    }
-
-    /* Very small screens */
-
-    @media (max-width: 380px) {
-
-      .page {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      nav {
-        gap: 14px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="page">
-
-    <main>
-
-      <section
-        class="content"
-        aria-labelledby="page-title"
-      >
-
-        <h1 id="page-title">
-          Konpran
-        </h1>
-
-        <p class="description">
-          It begins with what is there.
-        </p>
-
-        <p class="description">
-          Look closely at how it is used, what has led to it, what surrounds
-          it, and what has simply remained. The closer the look, the more
-          the first question can shift.
-        </p>
-
-        <p class="description">
-          Look at what affects what. A small adjustment can reach further
-          than expected. Sometimes something needs to move. Sometimes it is
-          better left alone. The work continues until what remains makes
-          sense as a whole.
-        </p>
-
-        <p class="description">
-          Then it leaves.
-        </p>
-
-        <p class="description">
-          It is used, handled, placed, remembered. It finds its place in a
-          life that can never be fully known. The task is to look closely
-          enough, question what needs questioning, and make each decision
-          count. What follows belongs to the life it enters.
-        </p>
-
-      </section>
-
-    </main>
-
-    <header>
-
-      <nav aria-label="Main navigation">
-
-        <a href="/about.html">
-          About
-        </a>
-
-        <a href="/philosophy.html">
-          Philosophy
-        </a>
-
-        <a href="mailto:talk@konpran.com">
-          Get in touch
-        </a>
-
-      </nav>
-
-    </header>
-
-    <footer>
-
-      <span>
-        KONPRAN © 2026
-      </span>
-
-      <span>
-        <a href="/privacy.html">
-          Privacy
-        </a>
-
-        ·
-
-        <a href="/terms.html">
-          Terms
-        </a>
-      </span>
-
-    </footer>
-
-  </div>
-
-</body>
-
-</html>
+</div> </body> </html>
